@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Suite File" tests="1" errors="0" failures="0" skipped="0" time="19.734" timestamp="2024-04-29T23:41:18.193656">
+<testsuite name="test snipeIT01" tests="1" errors="0" failures="0" skipped="0" time="11.035" timestamp="2024-04-29T23:41:24.693807">
+<testcase classname="Suite File.test snipeIT01" name="TC001" time="10.378">
+</testcase>
+</testsuite>
+</testsuite>

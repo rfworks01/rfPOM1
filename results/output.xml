@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.10.6 on win32)" generated="2024-04-28T21:53:32.246482" rpa="false" schemaversion="5">
+<suite id="s1" name="test snipeIT01" source="E:\JenkinsGitDemo\PythonDemo\rfPOM01\tests\suite_file\test_snipeIT01.robot">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2024-04-28T21:53:32.497695" level="INFO">Opening browser 'chrome' to base url 'https://demo.snipeitapp.com/login'.</msg>
+<arg>browser=chrome</arg>
+<arg>url=https://demo.snipeitapp.com/login</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-28T21:53:32.497695" elapsed="6.937315"/>
+</kw>
+<test id="s1-t1" name="TC001" line="8">
+<kw name="Open browser And Navigate">
+<kw name="Enter Username">
+<msg time="2024-04-28T21:53:39.439009" level="FAIL">No keyword with name 'Enter Username' found.</msg>
+<arg>dssfsdf</arg>
+<status status="FAIL" start="2024-04-28T21:53:39.439009" elapsed="0.000000">No keyword with name 'Enter Username' found.</status>
+</kw>
+<status status="FAIL" start="2024-04-28T21:53:39.436011" elapsed="0.002998">No keyword with name 'Enter Username' found.</status>
+</kw>
+<status status="FAIL" start="2024-04-28T21:53:39.436011" elapsed="0.004126">No keyword with name 'Enter Username' found.</status>
+</test>
+<status status="FAIL" start="2024-04-28T21:53:32.246482" elapsed="7.195379"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="test snipeIT01">test snipeIT01</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
