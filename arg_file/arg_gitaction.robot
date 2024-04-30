@@ -1,5 +1,5 @@
 
---python-path ./resources/*:./resources/locators/* 
+--python-path /resources/*:/resources/locators/* 
 
 #specify report folder
 -d reports 
