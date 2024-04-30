@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Suite File" tests="1" errors="0" failures="0" skipped="0" time="19.734" timestamp="2024-04-29T23:41:18.193656">
-<testsuite name="test snipeIT01" tests="1" errors="0" failures="0" skipped="0" time="11.035" timestamp="2024-04-29T23:41:24.693807">
-<testcase classname="Suite File.test snipeIT01" name="TC001" time="10.378">
+<testsuite name="Suite File &amp; Test 001" tests="2" errors="0" failures="0" skipped="0" time="19.112" timestamp="2024-04-30T14:58:47.433174">
+<testsuite name="Suite File" tests="1" errors="0" failures="0" skipped="0" time="19.064" timestamp="2024-04-30T14:58:47.464425">
+<testsuite name="test snipeIT01" tests="1" errors="0" failures="0" skipped="0" time="10.473" timestamp="2024-04-30T14:58:53.857001">
+<testcase classname="Suite File &amp; Test 001.Suite File.test snipeIT01" name="TC001" time="9.836">
+</testcase>
+</testsuite>
+</testsuite>
+<testsuite name="Test 001" tests="1" errors="0" failures="0" skipped="0" time="0.016" timestamp="2024-04-30T14:59:06.528788">
+<testcase classname="Suite File &amp; Test 001.Test 001" name="TC001_Execute Sample Test Case" time="0.014">
 </testcase>
 </testsuite>
 </testsuite>
