@@ -6,7 +6,7 @@
 #specify junit xml file
 -x junit-report.xml 
 
-#--Variable browserMode:headlesschrome
+--Variable browserMode:headlesschrome
 
 #file to execute
 # tests/test_001.robot

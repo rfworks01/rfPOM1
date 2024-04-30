@@ -32,3 +32,4 @@ jobs:
     - name: Test with RobotFramework
       run: |
         python -m robot -d reports --argumentfile arg_file/arg_gitaction.robot
+        python -m robotmetrics -M reports/metrix_report.html --inputpath reports  --output output.xml
