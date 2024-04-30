@@ -31,4 +31,4 @@ jobs:
     
     - name: Test with RobotFramework
       run: |
-        pytest
+        python -m robot -d reports --argumentfile arg_file/arg_gitaction.robot
