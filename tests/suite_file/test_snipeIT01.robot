@@ -1,7 +1,7 @@
 *** Settings ***
 Library    SeleniumLibrary
 Library    FakerLibrary
-Resource   ${EXECDIR}/resources/snipeit_keywords.resource
+Resource   ${EXECDIR}/resources/snipeit_kw.resource
 
 *** Variables ***
 # ${EXECDIR}     E:/JenkinsGitDemo/PythonDemo/rfPOM01
