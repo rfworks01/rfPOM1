@@ -1,7 +1,7 @@
 *** Settings ***
 Library    SeleniumLibrary
 Library    FakerLibrary
-Resource   ${EXECDIR}/resources/snipeit_keywords.resource
+Resource   snipeit_keywords.resource
 
 *** Variables ***
 # ${EXECDIR}     E:/JenkinsGitDemo/PythonDemo/rfPOM01
@@ -10,8 +10,7 @@ Resource   ${EXECDIR}/resources/snipeit_keywords.resource
 TC001
    Open browser And Navigate to login    admin  password
    Create new user
-   Enter new user data
-      
+   Enter new user data 
    Logout from application
    
 

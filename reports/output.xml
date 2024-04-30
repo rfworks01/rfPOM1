@@ -1,197 +1,197 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.10.6 on win32)" generated="2024-04-30T15:06:14.593731" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.10.6 on win32)" generated="2024-04-30T15:19:37.397120" rpa="false" schemaversion="5">
 <suite id="s1" name="Suite File &amp; Test 001">
 <suite id="s1-s1" name="Suite File" source="E:\JenkinsGitDemo\PythonDemo\rfPOM01\tests\suite_file">
 <kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
-<msg time="2024-04-30T15:06:14.839897" level="INFO">Opening browser 'headlesschrome' to base url 'https://demo.snipeitapp.com/login'.</msg>
+<msg time="2024-04-30T15:19:37.658825" level="INFO">Opening browser 'headlesschrome' to base url 'https://demo.snipeitapp.com/login'.</msg>
 <arg>browser=${browserMode}</arg>
 <arg>url=https://demo.snipeitapp.com/login</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-04-30T15:06:14.839897" elapsed="6.279192"/>
+<status status="PASS" start="2024-04-30T15:19:37.658825" elapsed="6.459568"/>
 </kw>
 <suite id="s1-s1-s1" name="test snipeIT01" source="E:\JenkinsGitDemo\PythonDemo\rfPOM01\tests\suite_file\test_snipeIT01.robot">
 <test id="s1-s1-s1-t1" name="TC001" line="10">
 <kw name="Open browser And Navigate to login" owner="snipeit_keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-04-30T15:06:21.759288" level="INFO">Typing text 'admin' into text field 'id=username'.</msg>
+<msg time="2024-04-30T15:19:44.750835" level="INFO">Typing text 'admin' into text field 'id=username'.</msg>
 <arg>${LoginPage.username}</arg>
 <arg>admin</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-30T15:06:21.759288" elapsed="0.085433"/>
+<status status="PASS" start="2024-04-30T15:19:44.750835" elapsed="0.073628"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-04-30T15:06:21.844721" level="INFO">Typing text 'password' into text field 'id=password'.</msg>
+<msg time="2024-04-30T15:19:44.824463" level="INFO">Typing text 'password' into text field 'id=password'.</msg>
 <arg>${LoginPage.password}</arg>
 <arg>password</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-30T15:06:21.844721" elapsed="0.066309"/>
+<status status="PASS" start="2024-04-30T15:19:44.824463" elapsed="0.076199"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-04-30T15:06:24.923788" level="INFO">Slept 3 seconds.</msg>
+<msg time="2024-04-30T15:19:47.913382" level="INFO">Slept 3 seconds.</msg>
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-04-30T15:06:21.911030" elapsed="3.012758"/>
+<status status="PASS" start="2024-04-30T15:19:44.900662" elapsed="3.012720"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-04-30T15:06:24.923788" level="INFO">Clicking button '//button[contains(text(),'Login')]'.</msg>
+<msg time="2024-04-30T15:19:47.913382" level="INFO">Clicking button '//button[contains(text(),'Login')]'.</msg>
 <arg>${LoginPage.login_button}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-30T15:06:24.923788" elapsed="3.922922"/>
+<status status="PASS" start="2024-04-30T15:19:47.913382" elapsed="3.355991"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>css=h1.pull-left.pagetitle</arg>
 <arg>timeout=5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-04-30T15:06:28.847711" elapsed="0.026646"/>
+<status status="PASS" start="2024-04-30T15:19:51.269373" elapsed="0.025278"/>
 </kw>
 <arg>admin</arg>
 <arg>password</arg>
-<status status="PASS" start="2024-04-30T15:06:21.759288" elapsed="7.115069"/>
+<status status="PASS" start="2024-04-30T15:19:44.749835" elapsed="6.544816"/>
 </kw>
 <kw name="Create new user">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-04-30T15:06:28.874357" level="INFO">Clicking element '//ul[contains(@class,'nav navbar-nav')]/li[7]'.</msg>
+<msg time="2024-04-30T15:19:51.294651" level="INFO">Clicking element '//ul[contains(@class,'nav navbar-nav')]/li[7]'.</msg>
 <arg>//ul[contains(@class,'nav navbar-nav')]/li[7]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-30T15:06:28.874357" elapsed="0.063054"/>
+<status status="PASS" start="2024-04-30T15:19:51.294651" elapsed="0.063727"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-04-30T15:06:28.938411" level="INFO">Clicking element '//ul[@class='dropdown-menu']/li[6]/a[1]'.</msg>
+<msg time="2024-04-30T15:19:51.358378" level="INFO">Clicking element '//ul[@class='dropdown-menu']/li[6]/a[1]'.</msg>
 <arg>//ul[@class='dropdown-menu']/li[6]/a[1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-30T15:06:28.938411" elapsed="0.802926"/>
+<status status="PASS" start="2024-04-30T15:19:51.358378" elapsed="0.825767"/>
 </kw>
-<status status="PASS" start="2024-04-30T15:06:28.874357" elapsed="0.867267"/>
+<status status="PASS" start="2024-04-30T15:19:51.294651" elapsed="0.889494"/>
 </kw>
 <kw name="Enter new user data">
 <kw name="First Name" owner="FakerLibrary">
-<msg time="2024-04-30T15:06:29.741624" level="INFO">${first_name} = Olivia</msg>
+<msg time="2024-04-30T15:19:52.184145" level="INFO">${first_name} = Kyle</msg>
 <var>${first_name}</var>
-<status status="PASS" start="2024-04-30T15:06:29.741624" elapsed="0.000000"/>
+<status status="PASS" start="2024-04-30T15:19:52.184145" elapsed="0.000000"/>
 </kw>
 <kw name="Last Name" owner="FakerLibrary">
-<msg time="2024-04-30T15:06:29.741624" level="INFO">${last_name} = Jacobson</msg>
+<msg time="2024-04-30T15:19:52.184145" level="INFO">${last_name} = Dickson</msg>
 <var>${last_name}</var>
-<status status="PASS" start="2024-04-30T15:06:29.741624" elapsed="0.000000"/>
+<status status="PASS" start="2024-04-30T15:19:52.184145" elapsed="0.000000"/>
 </kw>
 <kw name="User Name" owner="FakerLibrary">
-<msg time="2024-04-30T15:06:29.741624" level="INFO">${username} = michaelbush</msg>
+<msg time="2024-04-30T15:19:52.184145" level="INFO">${username} = upierce</msg>
 <var>${username}</var>
-<status status="PASS" start="2024-04-30T15:06:29.741624" elapsed="0.000000"/>
+<status status="PASS" start="2024-04-30T15:19:52.184145" elapsed="0.000000"/>
 </kw>
 <kw name="Free Email" owner="FakerLibrary">
-<msg time="2024-04-30T15:06:29.741624" level="INFO">${userEmail} = wallacerobin@hotmail.com</msg>
+<msg time="2024-04-30T15:19:52.184145" level="INFO">${userEmail} = dylan16@yahoo.com</msg>
 <var>${userEmail}</var>
-<status status="PASS" start="2024-04-30T15:06:29.741624" elapsed="0.000000"/>
+<status status="PASS" start="2024-04-30T15:19:52.184145" elapsed="0.000000"/>
 </kw>
 <kw name="Enter New User Information" owner="snipeit_keywords">
 <kw name="Click and Input text" owner="snipeit_keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-04-30T15:06:29.741624" level="INFO">Clicking element 'id=first_name'.</msg>
+<msg time="2024-04-30T15:19:52.184145" level="INFO">Clicking element 'id=first_name'.</msg>
 <arg>${eleLocator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-30T15:06:29.741624" elapsed="0.061968"/>
+<status status="PASS" start="2024-04-30T15:19:52.184145" elapsed="0.062013"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-04-30T15:06:29.803592" level="INFO">Typing text 'Olivia' into text field 'id=first_name'.</msg>
+<msg time="2024-04-30T15:19:52.246158" level="INFO">Typing text 'Kyle' into text field 'id=first_name'.</msg>
 <arg>${eleLocator}</arg>
 <arg>${textInput}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-30T15:06:29.803592" elapsed="0.062057"/>
+<status status="PASS" start="2024-04-30T15:19:52.246158" elapsed="0.068412"/>
 </kw>
 <arg>${NewUserInfo.firstname}</arg>
 <arg>${firstname}</arg>
-<status status="PASS" start="2024-04-30T15:06:29.741624" elapsed="0.124025"/>
+<status status="PASS" start="2024-04-30T15:19:52.184145" elapsed="0.130425"/>
 </kw>
 <kw name="Click and Input text" owner="snipeit_keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-04-30T15:06:29.865649" level="INFO">Clicking element 'id=last_name'.</msg>
+<msg time="2024-04-30T15:19:52.314570" level="INFO">Clicking element 'id=last_name'.</msg>
 <arg>${eleLocator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-30T15:06:29.865649" elapsed="0.044839"/>
+<status status="PASS" start="2024-04-30T15:19:52.314570" elapsed="0.080541"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-04-30T15:06:29.910488" level="INFO">Typing text 'Jacobson' into text field 'id=last_name'.</msg>
+<msg time="2024-04-30T15:19:52.395111" level="INFO">Typing text 'Dickson' into text field 'id=last_name'.</msg>
 <arg>${eleLocator}</arg>
 <arg>${textInput}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-30T15:06:29.910488" elapsed="0.064614"/>
+<status status="PASS" start="2024-04-30T15:19:52.395111" elapsed="0.082957"/>
 </kw>
 <arg>${NewUserInfo.lastname}</arg>
 <arg>${lastname}</arg>
-<status status="PASS" start="2024-04-30T15:06:29.865649" elapsed="0.109453"/>
+<status status="PASS" start="2024-04-30T15:19:52.314570" elapsed="0.163498"/>
 </kw>
 <kw name="Click and Input text" owner="snipeit_keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-04-30T15:06:29.975102" level="INFO">Clicking element 'id=username'.</msg>
+<msg time="2024-04-30T15:19:52.494167" level="INFO">Clicking element 'id=username'.</msg>
 <arg>${eleLocator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-30T15:06:29.975102" elapsed="0.051201"/>
+<status status="PASS" start="2024-04-30T15:19:52.493170" elapsed="0.034501"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-04-30T15:06:30.026303" level="INFO">Typing text 'michaelbush' into text field 'id=username'.</msg>
+<msg time="2024-04-30T15:19:52.527671" level="INFO">Typing text 'upierce' into text field 'id=username'.</msg>
 <arg>${eleLocator}</arg>
 <arg>${textInput}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-30T15:06:30.026303" elapsed="0.070665"/>
+<status status="PASS" start="2024-04-30T15:19:52.527671" elapsed="0.071221"/>
 </kw>
 <arg>${NewUserInfo.username}</arg>
 <arg>${new_username}</arg>
-<status status="PASS" start="2024-04-30T15:06:29.975102" elapsed="0.121866"/>
+<status status="PASS" start="2024-04-30T15:19:52.478068" elapsed="0.120824"/>
 </kw>
 <kw name="Click and Input text" owner="snipeit_keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-04-30T15:06:30.096968" level="INFO">Clicking element 'id=password'.</msg>
+<msg time="2024-04-30T15:19:52.598892" level="INFO">Clicking element 'id=password'.</msg>
 <arg>${eleLocator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-30T15:06:30.096968" elapsed="0.047417"/>
+<status status="PASS" start="2024-04-30T15:19:52.598892" elapsed="0.046318"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-04-30T15:06:30.144385" level="INFO">Typing text 'Test@1234' into text field 'id=password'.</msg>
+<msg time="2024-04-30T15:19:52.645210" level="INFO">Typing text 'Test@1234' into text field 'id=password'.</msg>
 <arg>${eleLocator}</arg>
 <arg>${textInput}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-30T15:06:30.144385" elapsed="0.068205"/>
+<status status="PASS" start="2024-04-30T15:19:52.645210" elapsed="0.069925"/>
 </kw>
 <arg>${NewUserInfo.pw}</arg>
 <arg>${pw}</arg>
-<status status="PASS" start="2024-04-30T15:06:30.096968" elapsed="0.115622"/>
+<status status="PASS" start="2024-04-30T15:19:52.598892" elapsed="0.116243"/>
 </kw>
 <kw name="Click and Input text" owner="snipeit_keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-04-30T15:06:30.212590" level="INFO">Clicking element 'id=password_confirm'.</msg>
+<msg time="2024-04-30T15:19:52.715135" level="INFO">Clicking element 'id=password_confirm'.</msg>
 <arg>${eleLocator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-30T15:06:30.212590" elapsed="0.045433"/>
+<status status="PASS" start="2024-04-30T15:19:52.715135" elapsed="0.045789"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-04-30T15:06:30.258023" level="INFO">Typing text 'Test@1234' into text field 'id=password_confirm'.</msg>
+<msg time="2024-04-30T15:19:52.776405" level="INFO">Typing text 'Test@1234' into text field 'id=password_confirm'.</msg>
 <arg>${eleLocator}</arg>
 <arg>${textInput}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-30T15:06:30.258023" elapsed="0.049682"/>
+<status status="PASS" start="2024-04-30T15:19:52.760924" elapsed="0.086651"/>
 </kw>
 <arg>${NewUserInfo.confirm_pw}</arg>
 <arg>${pw}</arg>
-<status status="PASS" start="2024-04-30T15:06:30.212590" elapsed="0.095115"/>
+<status status="PASS" start="2024-04-30T15:19:52.715135" elapsed="0.132440"/>
 </kw>
 <kw name="Click and Input text" owner="snipeit_keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-04-30T15:06:30.307705" level="INFO">Clicking element 'id=email'.</msg>
+<msg time="2024-04-30T15:19:52.847575" level="INFO">Clicking element 'id=email'.</msg>
 <arg>${eleLocator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-30T15:06:30.307705" elapsed="0.051355"/>
+<status status="PASS" start="2024-04-30T15:19:52.847575" elapsed="0.074459"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-04-30T15:06:30.359060" level="INFO">Typing text 'wallacerobin@hotmail.com' into text field 'id=email'.</msg>
+<msg time="2024-04-30T15:19:52.922034" level="INFO">Typing text 'dylan16@yahoo.com' into text field 'id=email'.</msg>
 <arg>${eleLocator}</arg>
 <arg>${textInput}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-30T15:06:30.359060" elapsed="0.085730"/>
+<status status="PASS" start="2024-04-30T15:19:52.922034" elapsed="0.081974"/>
 </kw>
 <arg>${NewUserInfo.useremail}</arg>
 <arg>${useremail}</arg>
-<status status="PASS" start="2024-04-30T15:06:30.307705" elapsed="0.137085"/>
+<status status="PASS" start="2024-04-30T15:19:52.847575" elapsed="0.157433"/>
 </kw>
 <arg>${first_name}</arg>
 <arg>${last_name}</arg>
@@ -200,46 +200,46 @@
 <arg>${userEmail}</arg>
 <doc>enter input text data
 firstname,lastname,username,password,useremail</doc>
-<status status="PASS" start="2024-04-30T15:06:29.741624" elapsed="0.703166"/>
+<status status="PASS" start="2024-04-30T15:19:52.184145" elapsed="0.820863"/>
 </kw>
-<status status="PASS" start="2024-04-30T15:06:29.741624" elapsed="0.703166"/>
+<status status="PASS" start="2024-04-30T15:19:52.184145" elapsed="0.820863"/>
 </kw>
 <kw name="Logout from application" owner="snipeit_keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-04-30T15:06:30.444790" level="INFO">Clicking element 'css=li.dropdown.user.user-menu'.</msg>
+<msg time="2024-04-30T15:19:53.006008" level="INFO">Clicking element 'css=li.dropdown.user.user-menu'.</msg>
 <arg>css=li.dropdown.user.user-menu</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-30T15:06:30.444790" elapsed="0.055566"/>
+<status status="PASS" start="2024-04-30T15:19:53.006008" elapsed="0.057843"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-04-30T15:06:31.508027" level="INFO">Slept 1 second.</msg>
+<msg time="2024-04-30T15:19:54.073086" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-04-30T15:06:30.500356" elapsed="1.007671"/>
+<status status="PASS" start="2024-04-30T15:19:53.065219" elapsed="1.007867"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-04-30T15:06:31.508027" level="INFO">Clicking element 'xpath=//li[@class="dropdown user user-menu open"]//li[8]'.</msg>
+<msg time="2024-04-30T15:19:54.073086" level="INFO">Clicking element 'xpath=//li[@class="dropdown user user-menu open"]//li[8]'.</msg>
 <arg>xpath=//li[@class="dropdown user user-menu open"]//li[8]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-30T15:06:31.508027" elapsed="0.728220"/>
+<status status="PASS" start="2024-04-30T15:19:54.073086" elapsed="0.718788"/>
 </kw>
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>Please Login</arg>
 <arg>timeout=5s</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2024-04-30T15:06:32.236247" elapsed="0.003589"/>
+<status status="PASS" start="2024-04-30T15:19:54.792532" elapsed="0.000267"/>
 </kw>
-<status status="PASS" start="2024-04-30T15:06:30.444790" elapsed="1.795046"/>
+<status status="PASS" start="2024-04-30T15:19:53.005008" elapsed="1.787791"/>
 </kw>
-<status status="PASS" start="2024-04-30T15:06:21.759288" elapsed="10.480548"/>
+<status status="PASS" start="2024-04-30T15:19:44.748838" elapsed="10.043961"/>
 </test>
-<status status="PASS" start="2024-04-30T15:06:21.119089" elapsed="11.120747"/>
+<status status="PASS" start="2024-04-30T15:19:44.118393" elapsed="10.674406"/>
 </suite>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-04-30T15:06:32.239836" elapsed="2.231226"/>
+<status status="PASS" start="2024-04-30T15:19:54.808425" elapsed="2.321570"/>
 </kw>
-<status status="PASS" start="2024-04-30T15:06:14.624991" elapsed="19.846071"/>
+<status status="PASS" start="2024-04-30T15:19:37.428386" elapsed="19.701609"/>
 </suite>
 <suite id="s1-s2" name="Test 001" source="E:\JenkinsGitDemo\PythonDemo\rfPOM01\tests\test_001.robot">
 <test id="s1-s2-t1" name="TC001_Execute Sample Test Case" line="4">
@@ -247,15 +247,15 @@ firstname,lastname,username,password,useremail</doc>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${EXECDIR}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-04-30T15:06:34.483594" elapsed="0.001581"/>
+<status status="PASS" start="2024-04-30T15:19:57.143299" elapsed="0.000425"/>
 </kw>
-<status status="PASS" start="2024-04-30T15:06:34.483212" elapsed="0.001963"/>
+<status status="PASS" start="2024-04-30T15:19:57.142283" elapsed="0.002437"/>
 </kw>
-<status status="PASS" start="2024-04-30T15:06:34.471062" elapsed="0.015123"/>
+<status status="PASS" start="2024-04-30T15:19:57.129995" elapsed="0.014725"/>
 </test>
-<status status="PASS" start="2024-04-30T15:06:34.471062" elapsed="0.016108"/>
+<status status="PASS" start="2024-04-30T15:19:57.129995" elapsed="0.015735"/>
 </suite>
-<status status="PASS" start="2024-04-30T15:06:14.593731" elapsed="19.897659"/>
+<status status="PASS" start="2024-04-30T15:19:37.397120" elapsed="19.750598"/>
 </suite>
 <statistics>
 <total>
