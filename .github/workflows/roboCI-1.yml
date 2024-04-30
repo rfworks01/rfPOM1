@@ -29,12 +29,12 @@ jobs:
     
     - name: Test with RobotFramework
       run: |
-        python -m robot -d reports --argumentfile arg_file/arg_gitaction.robot
+        python -m robot --argumentfile arg_file/arg_gitaction.robot
         
-    # - name: Generate Matrix Report
-    #   run: |
-    #     robotmetrics -M reports/metrix_report.html --inputpath reports  --output output.xml
-    #     # Single deploy job since we're just deploying
+    - name: Generate Matrix Report
+      run: |
+        robotmetrics -M reports/metrix_report.html --inputpath reports  --output output.xml
+        # Single deploy job since we're just deploying
   
 
     # - name: Checkout
