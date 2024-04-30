@@ -1,3 +1,6 @@
+
+--python-path ./pages:./resources:./resources/locators 
+
 #specify report folder
 -d reports 
 #specify junit xml file
