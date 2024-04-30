@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Suite File &amp; Test 001" tests="2" errors="0" failures="0" skipped="0" time="19.751" timestamp="2024-04-30T15:19:37.397120">
-<testsuite name="Suite File" tests="1" errors="0" failures="0" skipped="0" time="19.702" timestamp="2024-04-30T15:19:37.428386">
-<testsuite name="test snipeIT01" tests="1" errors="0" failures="0" skipped="0" time="10.674" timestamp="2024-04-30T15:19:44.118393">
-<testcase classname="Suite File &amp; Test 001.Suite File.test snipeIT01" name="TC001" time="10.044">
+<testsuite name="Suite File" tests="2" errors="0" failures="0" skipped="0" time="28.780" timestamp="2024-04-30T17:38:00.983974">
+<testsuite name="Test Snipe Newasset01" tests="1" errors="0" failures="0" skipped="0" time="10.775" timestamp="2024-04-30T17:38:07.834285">
+<testcase classname="Suite File.Test Snipe Newasset01" name="TC001_file2" time="10.136">
 </testcase>
 </testsuite>
-</testsuite>
-<testsuite name="Test 001" tests="1" errors="0" failures="0" skipped="0" time="0.016" timestamp="2024-04-30T15:19:57.129995">
-<testcase classname="Suite File &amp; Test 001.Test 001" name="TC001_Execute Sample Test Case" time="0.015">
+<testsuite name="test snipeIT01" tests="1" errors="0" failures="0" skipped="0" time="8.856" timestamp="2024-04-30T17:38:18.609684">
+<testcase classname="Suite File.test snipeIT01" name="TC001" time="8.856">
 </testcase>
 </testsuite>
 </testsuite>

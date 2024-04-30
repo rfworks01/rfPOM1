@@ -2,12 +2,14 @@
 Library    SeleniumLibrary
 Library    FakerLibrary
 Resource   ${EXECDIR}/resources/snipeit_kw.resource
+Test Setup  Open Browser   browser=${browserMode}    url=https://demo.snipeitapp.com/login
+Test Teardown   Close Browser
 
 *** Variables ***
-# ${EXECDIR}     E:/JenkinsGitDemo/PythonDemo/rfPOM01
+${browserMode}   chrome
 
 *** Test Cases ***
-TC001
+TC001_create_new_user
    Open browser And Navigate to login    admin  password
    Create new user
    Enter new user data 
@@ -24,7 +26,8 @@ Enter new user data
    ${username}     FakerLibrary.User Name
    ${userEmail}    FakerLibrary.Free Email
    Enter New User Information    ${first_name}  ${last_name}  ${username}  Test@1234  ${userEmail}  
-
+   Capture Page Screenshot    EMBED
+   
 Click Save button
     click Element    xpath=//form[@id='userForm']/div/div[2]/button/i
     Sleep    5s

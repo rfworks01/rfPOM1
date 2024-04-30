@@ -6,8 +6,9 @@
 #specify junit xml file
 -x junit-report.xml 
 
---Variable browserMode:headlesschrome
+#--Variable browserMode:headlesschrome
 
 #file to execute
-tests/suite_file
-tests/test_001.robot
+# tests/test_001.robot
+tests/snipeit_suites
+

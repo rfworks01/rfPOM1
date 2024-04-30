@@ -1,5 +1,5 @@
 *** Settings ***
-Library  SeleniumLibrary
+Library    SeleniumLibrary
 Resource   ${EXECDIR}/resources/locators/snipeITLogin.resource
 Resource   ${EXECDIR}/resources/locators/newUserInfo.resource
  
@@ -36,3 +36,4 @@ Enter New User Information
    Click and Input text    ${NewUserInfo.pw}             ${pw}  
    Click and Input text    ${NewUserInfo.confirm_pw}     ${pw}  
    Click and Input text    ${NewUserInfo.useremail}      ${useremail}  
+   Capture Page Screenshot   EMBED
