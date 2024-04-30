@@ -6,4 +6,4 @@ robotframework
 robotframework-seleniumlibrary
 robotframework-metrics
 robotframework-pageobjectlibrary
-
+robotframework-faker
