@@ -29,8 +29,9 @@ jobs:
     
     - name: Test with RobotFramework
       run: |
-        python -m robot --argumentfile arg_file/arg_gitaction.robot
-        
+       python -m robot --python-path resources:resources/locators  -d reports -x junit-report.xml --Variable browserMode:headlesschrome tests/snipeit_suites
+    
+    #   python -m robot --argumentfile arg_file/arg_gitaction.robot
     # - name: Generate Matrix Report
     #   run: |
     #     robotmetrics -M reports/metrix_report.html --inputpath reports  --output output.xml
