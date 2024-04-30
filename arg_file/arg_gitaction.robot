@@ -9,5 +9,5 @@
 --Variable browserMode:headlesschrome
 
 #file to execute
-tests/suite_file
-
+#tests/suite_file
+tests/test_001.robot
